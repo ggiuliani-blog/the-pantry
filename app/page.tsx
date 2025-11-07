@@ -6,42 +6,44 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-leaf-50">
-        <div className="container-page py-16 sm:py-24 grid gap-6">
-          <div className="flex items-center gap-3">
-            <Truck className="w-10 h-10 text-leaf-700" />
-            <h1 className="text-4xl sm:text-5xl font-bold text-leaf-800">Refill. Reuse. Repeat.</h1>
-          </div>
-          <p className="text-lg sm:text-xl max-w-2xl text-gray-700">
-            The Pantry — your local zero-waste grocery van bringing refillable staples and eco products to your street.
-          </p>
-          <div className="flex gap-3">
-            <a href="#offerings" className="px-5 py-2.5 bg-leaf-700 text-white rounded-md">Find the Van</a>
-            <Link href="/work-with-us" className="px-5 py-2.5 border border-leaf-700 text-leaf-700 rounded-md">
-              Become a Franchisee
-            </Link>
+      <section className="bg-gradient-to-br from-leaf-50 to-leaf-100">
+        <div className="container-page py-16 sm:py-24">
+          <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <Truck className="w-10 h-10 text-leaf-700" />
+              <h1 className="text-4xl sm:text-5xl font-bold text-leaf-800">Refill. Reuse. Repeat.</h1>
+            </div>
+            <p className="text-lg sm:text-xl text-gray-700 mb-6">
+              The Pantry — your local zero-waste grocery van bringing refillable staples and eco products to your street.
+            </p>
+            <div className="flex gap-3">
+              <a href="#offerings" className="px-5 py-2.5 bg-leaf-700 text-white rounded-md">Find the Van</a>
+              <Link href="/work-with-us" className="px-5 py-2.5 border border-leaf-700 text-leaf-700 rounded-md">
+                Become a Franchisee
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Mission */}
-      <section id="mission" className="container-page py-16 scroll-mt-20">
-        <div className="flex items-start gap-4 mb-4">
-          <Heart className="w-8 h-8 text-leaf-700 flex-shrink-0 mt-1" />
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
-            <p className="text-gray-700 max-w-3xl">
+      <div className="container-page py-16">
+        {/* Mission */}
+        <section id="mission" className="mb-16 scroll-mt-20">
+          <div className="text-center mb-10">
+            <Heart className="w-12 h-12 text-leaf-700 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold mb-3">Our Mission</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
               To make sustainable, zero-waste shopping accessible and community-first. We bring refillable pantry staples,
               fresh produce, and low-impact lifestyle products directly to neighborhoods in a friendly, mobile format.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Offerings */}
-      <section id="offerings" className="bg-gray-50 scroll-mt-20">
-        <div className="container-page py-16">
-          <h2 className="text-2xl font-semibold mb-6">What We Offer</h2>
+        {/* Offerings */}
+        <section id="offerings" className="mb-16 scroll-mt-20">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-3">What We Offer</h2>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { name: 'Dry staples', icon: Package },
@@ -56,27 +58,25 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Why It Matters */}
-      <section id="why" className="container-page py-16 scroll-mt-20">
-        <div className="flex items-start gap-4">
-          <Globe className="w-8 h-8 text-leaf-700 flex-shrink-0 mt-1" />
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Why It Matters</h2>
-            <p className="text-gray-700 max-w-3xl">
+        {/* Why It Matters */}
+        <section id="why" className="mb-16 scroll-mt-20">
+          <div className="text-center mb-10">
+            <Globe className="w-12 h-12 text-leaf-700 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold mb-3">Why It Matters</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Reducing single-use packaging saves resources and keeps communities cleaner. Small changes — like refilling rice,
               beans, or soap — add up to a meaningful impact.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Community Highlights */}
-      <section id="community" className="bg-gray-50 scroll-mt-20">
-        <div className="container-page py-16">
-          <h2 className="text-2xl font-semibold mb-6">Community Highlights</h2>
+        {/* Community Highlights */}
+        <section id="community" className="mb-16 scroll-mt-20">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-3">Community Highlights</h2>
+          </div>
           <ul className="grid sm:grid-cols-2 gap-6 text-gray-700">
             {[
               { text: 'Local market pop-ups and route stops', icon: Calendar },
@@ -90,20 +90,20 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact Form */}
-      <section id="contact" className="container-page py-16 scroll-mt-20">
-        <div className="rounded-md border p-6 max-w-2xl">
-          <div className="flex items-center gap-3 mb-2">
-            <Mail className="w-6 h-6 text-leaf-700" />
-            <h2 className="text-2xl font-semibold">Get in touch</h2>
+        {/* Contact Form */}
+        <section id="contact" className="scroll-mt-20">
+          <div className="text-center max-w-2xl mx-auto">
+            <Mail className="w-12 h-12 text-leaf-700 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold mb-3">Get in touch</h2>
+            <p className="text-gray-600 mb-8">Questions about stops, products, or partnerships? We'd love to hear from you.</p>
+            <div className="rounded-md border p-6 bg-white">
+              <ContactForm />
+            </div>
           </div>
-          <p className="text-gray-700 mb-6">Questions about stops, products, or partnerships? We'd love to hear from you.</p>
-          <ContactForm />
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
